@@ -42,7 +42,7 @@ const Price = styled.span`
 `;
 
 const FilterContainer = styled.div`
-  width: 50%;
+  width: 60%;
   margin: 30px 0px;
   display: flex;
   justify-content: space-between;
@@ -59,6 +59,8 @@ const FilterTitle = styled.span`
 `;
 
 const FilterColor = styled.div`
+  margin-left: 10px;
+  padding: 5px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -75,7 +77,7 @@ const FilterSize = styled.select`
 const FilterSizeOption = styled.option``;
 
 const AddContainer = styled.div`
-  width: 50%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -125,10 +127,10 @@ const Product = () => {
           <Price>$ 15</Price>
           <FilterContainer>
             <Filter>
-              {/* <FilterTitle>Color</FilterTitle>
-              {product.color?.map((c) => (
-                <FilterColor color={c} key={c} />
-              ))} */}
+            <FilterTitle>Pot Color</FilterTitle>
+                <FilterColor color="black" />
+                <FilterColor color="gray" />
+                <FilterColor color="darkgray" />
             </Filter>
             <Filter>
               <FilterTitle>Size</FilterTitle>
